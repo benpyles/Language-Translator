@@ -1,5 +1,9 @@
-import tkinter as tk
-from tkinter import ttk, scrolledtext
-from deep_translator import GoogleTranslator
-import threading
-import send_request
+import flet as ft
+
+def main(page: ft.Page):
+    page.title = "Language Translater"
+    t = ft.Text(value="Hello, world!", color="blue")
+    page.controls.append(t)
+    page.update()
+
+ft.app(main)

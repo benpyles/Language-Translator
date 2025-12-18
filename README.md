@@ -1,82 +1,84 @@
-Translator App
-A contemporary, desk-based translation tool using Python and Flet, designed with a dark-themed GUI and supporting real-time translation of languages.
-Characteristics
+# Language Translator
 
-???? Multi-language support English, Spanish, French
-• Modern Dark Theme user interface
-⚡ Real-time translation service via Google Translation API
-•???? Clean UI
-???? Language Choice Module
-Each
+-Translates desired text between a few languages using Google APIs
 
-⌨️ Multi-line text input/output support
-Screenshots
-Show Image
-Place your screenshot here
+-Needs internet
 
-Installing
+-Minimalistic simple gui built with flet so you can run on mobile desktop or in the web!
 
-Prerequisites
+### Installation
 
-For the above code to work properly for
 
-pip (Python package manager)
+## Requirements
+- Python 3.10 +
+- Flet
+- Deep Translator
+- Linux / Macos / Windows
 
-Setup
-
-.Clone the repository
-
-bashgit clone https://github
-
-cd translator-app
-virtual environment creation
-bashpython3 -m venv.
-source .venv/bin/activate  # On Windows: .ven
-
-Add dependencies
+## Linux / macOS Instalation
+```bash
+git clone https://github.com/benpyles/Language-Translator
+cd Language-Translator
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-usage
-Run your application:
-
-bashpython3 gui
-
 ```
-1. Choose the source language from "Base Language" drop-down
 
-2. Pick your target language from the "Target Language" dropdown
-3. Type your text into the input field
-4. Click '文A Translate' to translate
-5. Look at translation in output field
-## Technology Stack
-- *Flet* - UI framework for cross-platform apps
-- **deep-translator** - Translation API Wrapper
-- **Python 3.12**, Programming Language
-# Project Structure
-*
+## Windows Cmd
+```bash
+git clone https://github.com/benpyles/Language-Translator
+cd Language-Translator
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-translator-app
-|
-     |
-     |
-├── gui.py                 # Main application UI
+## Windows Powershell
+```bash
+git clone https://github.com/benpyles/Language-Translator
+cd Language-Translator
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
 
-Send request to translation API to translate text.     				├── send_request.py        # Translation API handler
-├── hover_animations.py    # UI animations
+## Usage Linux / Macos
+```bash
+python3 gui.py
+```
 
-├──  requirments.txt       # Dependencies for Python
-├── README.md          # Project documentation
+## Usage Windows Cmd / Powershell
+```bash
+python gui.py
+```
 
-Dependencies
-txtf
-deep-trans
-Configuration
+##Screenshots
 
-Currently, the app supports:
-English (en)
+![Ui](ui.png)
 
-English (en)
+##Project structure
 
-French (fr)
-In order to support additional languages, modifications need to be done in the options object of the gui.py file as well as the language codes in the send
+- gui.py - stores ui and flet code main file
+- send_request.py - handles the translating and communicates with google servers
+- hover_animations.py - still in development but is going to be animations
 
-Contributing Contributions are always welcome. Please do not hesitate to submit a pull request. Copy the project Create your feature branch (git checkout -b feature/AmazingFeature) Commit changes (git commit -m 'Add some AmazingFeature') Push to branch (git push origin feature/AmazingFeature) Open a Pull Request License This project is licensed under the MIT License. See the LICENSE file for details. ACKNOWLED Flet for the amazing UI framework deep_translator for translation functionalities Contact Your Name - @yourtwitter Project Link: https://github Powered with ❤️ in Flet & Python
+### Status
+
+## What to do
+    - hover animations
+    - Different ui themes
+    - Add support for different languages
+    - Improve code structure
+
+## How to contribute
+
+- Fork the repository
+- Create a new branch
+- Make you Additions
+- Commit the changes
+- Push the changes
+- Open a Pull Request
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
